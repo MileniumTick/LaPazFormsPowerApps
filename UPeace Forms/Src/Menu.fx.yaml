@@ -9,7 +9,7 @@ Menu As screen:
             =Sort(Table(
                 {
                     Title: "Travel Request",
-                    Screen: PurchaseRequest,
+                    Screen: TravelRequest,
                     IMG: "https://cdn0.iconfinder.com/data/icons/insurance-19/512/travel-1024.png"
                 },
                 {
@@ -187,6 +187,17 @@ Menu As screen:
                             ExitDate: "",
                             EntranceDate: "",
                             Comments: ""
+                        }
+                    ),
+                    "Travel Request",
+                    ClearCollect(
+                        TR,{
+                            ID: 1,
+                            'Itinerary - Date': "",
+                            Departure: "",
+                            Arrival: "",
+                            '# Days': 0,
+                            'Per Diem': ""
                         }
                     )
                 );
