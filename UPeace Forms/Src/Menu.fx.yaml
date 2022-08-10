@@ -1,0 +1,267 @@
+Menu As screen:
+    Fill: =RGBA(0, 0, 0, 0)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =724
+        Items: |-
+            =Sort(Table(
+                {
+                    Title: "Travel Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://cdn0.iconfinder.com/data/icons/insurance-19/512/travel-1024.png"
+                },
+                {
+                    Title: "Certification Request for Human Resources (Certificaciones de Recursos Humanos)",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png"
+                },
+                {
+                    Title: "Request for Bus Service (Carbus)",
+                    Screen: 'Bus Services Request',
+                    IMG: "https://cdn4.iconfinder.com/data/icons/england-isometric/512/g22686-1024.png"
+                },
+                {
+                    Title: "Reclamación de Gastos Médicos (Reembolsos)",
+                    Screen: PurchaseRequest,
+                    IMG:"https://www.teaseguro.net/gastos_medicos_GNP/images/ambulancia-.png"
+                },
+                {
+                    Title: "Payment Request",
+                    Screen: PaymentRequest,
+                    IMG: "https://cdn1.iconfinder.com/data/icons/payment-element-4/64/Payment-request-code-purchase-confirmation-512.png"
+                },
+                {
+                    Title: "Mandados",
+                    Screen: PurchaseRequest,
+                    IMG: "https://www.sensors.nl/wp-content/uploads/2020/04/services-icon-png-black-3.png"
+                },
+                {
+                    Title: "Library Acquisition Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://ncwc.edu/wp-content/uploads/2016/06/library-icon.png"
+                },
+                {
+                    Title: "Job Description",
+                    Screen: PurchaseRequest,
+                    IMG:"https://randschools.com/international-section/images/2020/Gallery/2018-18-job-icon.png"
+                },
+                {
+                    Title: "Institutional Vehicle Request",
+                    Screen: 'Institucional Vehicle Request',
+                    IMG:"https://cdn2.iconfinder.com/data/icons/auto-services/33/auto_contract-512.png"
+                },
+                {
+                    Title: "Fixed Assets Maintenance",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/4002/4002009.png"
+                },
+                {
+                    Title: "Equipment for External Use",
+                    Screen: RequestEquimentExternal,
+                    IMG: "https://cdn-icons-png.flaticon.com/512/2344/2344521.png"
+                },
+                {
+                    Title: "Extension or Addendum of Contract",
+                    Screen: ExtensionAddendumContract,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/8057/8057673.png"
+                },
+                {
+                    Title: "Contract Request",
+                    Screen: ContractRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/427/427703.png"
+                },
+                {
+                    Title: "Request for Email Accounts",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/552/552486.png"
+                },
+                {
+                    Title: "Abscence Request Form",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/4306/4306892.png"
+                },
+                {
+                    Title: "Abscence Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://cdn-icons-png.flaticon.com/512/4908/4908893.png"
+                },
+                {
+                    Title: "Purchase & Service Request",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/2728/2728447.png"
+                }
+            ),Title,Ascending)
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =89
+        Transition: =Transition.Pop
+        Width: =1366
+        WrapCount: =3
+        Y: =44
+        ZIndex: =1
+
+        Image2 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =55
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.IMG
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =55
+            X: =19
+            Y: =18
+            ZIndex: =1
+
+        Label6 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =63
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =359
+            X: =83
+            Y: =13
+            ZIndex: =2
+
+        Button2 As button:
+            Align: =Align.Left
+            BorderColor: =RGBA(0, 0, 0, 0.07)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.BorderColor, -75%)
+            FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =66
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 0, 0, 0.05), -10%)
+            OnSelect: |-
+                =Select(Parent);
+                Navigate(
+                    ThisItem.Screen,
+                    ScreenTransition.None
+                );
+                Switch(
+                    ThisItem.Title,
+                    "Purchase & Service Request",
+                    ClearCollect(
+                        PSR_QDJ,
+                        {
+                            ID: 1,
+                            Quantity: 0,
+                            Description: "",
+                            Justification: ""
+                        }
+                    ),
+                    "Equipment for External Use",
+                    ClearCollect(
+                        EFEU,{
+                            ID: 1,
+                            Quantity: 0,
+                            Description: "",
+                            AssetTag: "",
+                            ExitDate: "",
+                            EntranceDate: "",
+                            Comments: ""
+                        }
+                    )
+                );
+                Set(
+                    isJuridical,
+                    true
+                )
+            PressedBorderColor: =ColorFade(RGBA(0, 0, 0, 0), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 0, 0, 0), -30%)
+            Size: =12
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =431
+            X: =11
+            Y: =13
+            ZIndex: =3
+
+    RectQuickActionBar1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 120, 212, 1)
+        Height: =44
+        Width: =Parent.Width
+        ZIndex: =2
+
+    LblAppName1_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        Height: =44
+        Size: =15
+        Text: ="Navigation Menu"
+        Width: =Parent.Width
+        ZIndex: =3
+
+    Icon3 As icon.Home:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home,ScreenTransition.None)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =13
+        Y: =7
+        ZIndex: =4
+
+    Icon4 As icon.Save:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DetailList
+        OnSelect: =Navigate(List,ScreenTransition.None)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =1316
+        Y: =7
+        ZIndex: =5
+

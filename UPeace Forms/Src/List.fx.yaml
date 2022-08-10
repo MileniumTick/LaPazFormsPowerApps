@@ -1,0 +1,742 @@
+List As screen:
+    Fill: =RGBA(0, 0, 0, 0)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    RectQuickActionBar1_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 120, 212, 1)
+        Height: =44
+        Width: =Parent.Width
+        ZIndex: =2
+
+    LblAppName1_6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        Height: =44
+        Size: =15
+        Text: ="List Menu"
+        Width: =Parent.Width
+        ZIndex: =3
+
+    HomeIconList As icon.Home:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home,ScreenTransition.None)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =13
+        Y: =7
+        ZIndex: =4
+
+    "NavMenuList As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =143
+        Items: |-
+            =Sort(Table(
+                {
+                    Title: "Travel Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://cdn0.iconfinder.com/data/icons/insurance-19/512/travel-1024.png"
+                },
+                {
+                    Title: "Certification Request for Human Resources (Certificaciones de Recursos Humanos)",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png"
+                },
+                {
+                    Title: "Request for Bus Service (Carbus)",
+                    Screen: PurchaseRequest,
+                    IMG: "https://cdn4.iconfinder.com/data/icons/england-isometric/512/g22686-1024.png"
+                },
+                {
+                    Title: "Reclamación de Gastos Médicos (Reembolsos)",
+                    Screen: PurchaseRequest,
+                    IMG:"https://www.teaseguro.net/gastos_medicos_GNP/images/ambulancia-.png"
+                },
+                {
+                    Title: "Payment Request",
+                    Screen: PaymentRequest,
+                    IMG: "https://cdn1.iconfinder.com/data/icons/payment-element-4/64/Payment-request-code-purchase-confirmation-512.png"
+                },
+                {
+                    Title: "Mandados",
+                    Screen: PurchaseRequest,
+                    IMG: "https://www.sensors.nl/wp-content/uploads/2020/04/services-icon-png-black-3.png"
+                },
+                {
+                    Title: "Library Acquisition Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://ncwc.edu/wp-content/uploads/2016/06/library-icon.png"
+                },
+                {
+                    Title: "Job Description",
+                    Screen: PurchaseRequest,
+                    IMG:"https://randschools.com/international-section/images/2020/Gallery/2018-18-job-icon.png"
+                },
+                {
+                    Title: "Institutional Vehicle Request",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn2.iconfinder.com/data/icons/auto-services/33/auto_contract-512.png"
+                },
+                {
+                    Title: "Fixed Assets Maintenance",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/4002/4002009.png"
+                },
+                {
+                    Title: "Equipment for External Use",
+                    Screen: RequestEquimentExternal,
+                    IMG: "https://cdn-icons-png.flaticon.com/512/2344/2344521.png"
+                },
+                {
+                    Title: "Extension or Addendum of Contract",
+                    Screen: ExtensionAddendumContract,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/8057/8057673.png"
+                },
+                {
+                    Title: "Contract Request",
+                    Screen: ContractRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/427/427703.png"
+                },
+                {
+                    Title: "Request for Email Accounts",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/552/552486.png"
+                },
+                {
+                    Title: "Abscence Request Form",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/4306/4306892.png"
+                },
+                {
+                    Title: "Abscence Request",
+                    Screen: PurchaseRequest,
+                    IMG: "https://cdn-icons-png.flaticon.com/512/4908/4908893.png"
+                },
+                {
+                    Title: "Purchase & Service Request",
+                    Screen: PurchaseRequest,
+                    IMG:"https://cdn-icons-png.flaticon.com/512/2728/2728447.png"
+                }
+            ),Title,Ascending)
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =230
+        Width: =1366
+        Y: =44
+        ZIndex: =5
+
+        Title1 As label:
+            Align: =Align.Center
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =216
+            X: =6
+            Y: =74
+            ZIndex: =2
+
+        Image3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =55
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.IMG
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =55
+            X: =87
+            Y: =19
+            ZIndex: =4
+
+        Button2_1 As button:
+            Align: =Align.Left
+            BorderColor: =RGBA(0, 0, 0, 0.07)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =If(ThisItem.IsSelected = true,ColorFade(RGBA(0, 0, 0, 0.05), -10%),ColorFade(RGBA(0, 0, 0, 0), -10%))
+            FocusedBorderColor: =ColorFade(Self.BorderColor, -75%)
+            FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =122
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 0, 0, 0.05), -10%)
+            OnSelect: |-
+                =Select(Parent);
+                Set(ListValue,ThisItem.Title)
+            PressedBorderColor: =ColorFade(RGBA(0, 0, 0, 0), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 0, 0, 0), -30%)
+            Size: =12
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =216
+            X: =6
+            Y: =7
+            ZIndex: =6
+
+    ContractList As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(0, 120, 212, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =581
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 120, 212, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: ='Contract Request'
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(0, 120, 212, 1)
+        PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(0, 120, 212, .2)
+        Size: =13
+        Width: =1366
+        X: =0
+        Y: =187
+        ZIndex: =6
+
+        "'First Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="First Name"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'First Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Last Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Last Name"
+            FieldName: ="Last_x0020_Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Last Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Company''s Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Company's Name"
+            FieldName: ="Company_x0027_s_x0020_Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Company''s Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'Representative´s Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Representative´s Name"
+            FieldName: ="Representative_x00b4_s_x0020_Nam"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Representative´s Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        Gender_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Gender"
+            FieldName: ="Gender"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Gender.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        "'Telephone Number_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Telephone Number"
+            FieldName: ="Telephone_x0020_Number"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Telephone Number'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        "'Fax Number_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Fax Number"
+            FieldName: ="Fax_x0020_Number"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Fax Number'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+        "'Email Address_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Email Address"
+            FieldName: ="Email_x0020_Address"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'Email Address'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        "'Permanent Residence Addresss_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Permanent Residence Addresss"
+            FieldName: ="Permanent_x0020_Residence_x0020_"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'Permanent Residence Addresss'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =15
+
+        "'Contractual Relation_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Contractual Relation"
+            FieldName: ="Contractual_x0020_Relation"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Contractual Relation'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+        "'Contractual Relation (Class Teaching)_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Contractual Relation (Class Teaching)"
+            FieldName: ="Contractual_x0020_Relation_x0020"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'Contractual Relation (Class Teaching)'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =17
+
+        Description_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Description"
+            FieldName: ="Description"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.Description
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =18
+
+        "'Identification Number_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Identification Number"
+            FieldName: ="Identification_x0020_Number"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.'Identification Number'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =19
+
+        "'Juridical Number_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Juridical Number"
+            FieldName: ="Juridical_x0020_Number"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: =ThisItem.'Juridical Number'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =20
+
+        Citizenship_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Citizenship"
+            FieldName: ="Citizenship"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =16
+            Text: =ThisItem.Citizenship.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =21
+
+        "'Teaching Days_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Teaching Days"
+            FieldName: ="Teaching_x0020_Days"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =17
+            Text: =ThisItem.'Teaching Days'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =22
+
+        "'Date of Birth_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date of Birth"
+            FieldName: ="Date_x0020_of_x0020_Birth"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =18
+            Text: =ThisItem.'Date of Birth'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+        "'Preferred Payment Method_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Preferred Payment Method"
+            FieldName: ="Preferred_x0020_Payment_x0020_Me"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =19
+            Text: =ThisItem.'Preferred Payment Method'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =24
+
+        "'Start date of services_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Start date of services"
+            FieldName: ="Start_x0020_date_x0020_of_x0020_"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =20
+            Text: =ThisItem.'Start date of services'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =25
+
+        "'End Date of Services_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="End Date of Services"
+            FieldName: ="End_x0020_Date_x0020_of_x0020_Se"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =21
+            Text: =ThisItem.'End Date of Services'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
+
+        "'Comments on Timing_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Comments on Timing"
+            FieldName: ="Comments_x0020_on_x0020_Timing"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =22
+            Text: =ThisItem.'Comments on Timing'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
+
+        "'Payment Rate_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Payment Rate"
+            FieldName: ="Payment_x0020_Rate"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =23
+            Text: =ThisItem.'Payment Rate'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =28
+
+        "'Payment Plan_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Payment Plan"
+            FieldName: ="Payment_x0020_Plan"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =24
+            Text: =ThisItem.'Payment Plan'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =29
+
+        "'Other Payment Plan_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Other Payment Plan"
+            FieldName: ="Other_x0020_Payment_x0020_Plan"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =25
+            Text: =ThisItem.'Other Payment Plan'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =30
+
+        Currency_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Currency"
+            FieldName: ="Currency"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =26
+            Text: =ThisItem.Currency.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =31
+
+        Traveling_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Traveling"
+            FieldName: ="Traveling"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =27
+            Text: =ThisItem.Traveling.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =32
+
+        "'Daily Rate_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Daily Rate"
+            FieldName: ="Daily_x0020_Rate"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =28
+            Text: =ThisItem.'Daily Rate'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =33
+
+        "'Place will stay_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Place will stay"
+            FieldName: ="Place_x0020_will_x0020_stay"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =29
+            Text: =ThisItem.'Place will stay'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =34
+
+        Total_Column1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total"
+            FieldName: ="Total"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =30
+            Text: =ThisItem.Total
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =35
+
+        Consecutivo_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Consecutivo"
+            FieldName: ="Consecutivo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Consecutivo
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =36
+
+        "'Payment schedule proposed_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Payment schedule proposed"
+            FieldName: ="Payment_x0020_schedule_x0020_pro"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =31
+            Text: =ThisItem.'Payment schedule proposed'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =37
+
+        "'Funded by_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Funded by"
+            FieldName: ="Funded_x0020_by"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =32
+            Text: =ThisItem.'Funded by'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =38
+
+        "'Master Degree_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Master Degree"
+            FieldName: ="Master_x0020_Degree"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =33
+            Text: =ThisItem.'Master Degree'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =39
+
+        Department_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Department"
+            FieldName: ="Department"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =34
+            Text: =ThisItem.Department.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =40
+
+    MenuIcon As icon.FilterFlatFilled:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DocumentWithContent
+        OnSelect: =Navigate(Menu,ScreenTransition.None)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =30
+        X: =1319
+        Y: =7
+        ZIndex: =7
+

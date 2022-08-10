@@ -1,0 +1,50 @@
+{
+  "18b02a7e-3e00-47af-8d7f-a6f3704e5983": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://upeaceorg.sharepoint.com/sites/Departments": {
+        "dataSources": {
+          "Bus Service": {
+            "tableName": "599ad639-f018-4c08-9d65-17268d6d24d0"
+          },
+          "Centro de Costos": {
+            "tableName": "bad5242f-2278-4af5-b8c0-7f0295affc56"
+          },
+          "Contract Request": {
+            "tableName": "c74b0614-5b9b-4315-9004-6e4e684b9fb5"
+          },
+          "Payment Request": {
+            "tableName": "29574552-ee90-4667-9025-27f2bebb03f6"
+          },
+          "PSR": {
+            "tableName": "03c5968d-a004-4658-aa03-37b1c091ec81"
+          },
+          "Vehicle Request": {
+            "tableName": "c8957d93-b09f-4c87-b265-c68998770ee2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "PSR",
+      "Centro de Costos",
+      "Contract Request",
+      "Payment Request",
+      "Bus Service",
+      "Vehicle Request"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "18b02a7e-3e00-47af-8d7f-a6f3704e5983"
+  }
+}

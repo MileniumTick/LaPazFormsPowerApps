@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "PSR_QDJ",
+    "Type": "CollectionDataSourceInfo"
+  }
+]
