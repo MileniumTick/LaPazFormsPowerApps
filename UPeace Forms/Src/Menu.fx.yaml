@@ -179,7 +179,8 @@ Menu As screen:
                     ),
                     "Equipment for External Use",
                     ClearCollect(
-                        EFEU,{
+                        EFEU,
+                        {
                             ID: 1,
                             Quantity: 0,
                             Description: "",
@@ -191,7 +192,8 @@ Menu As screen:
                     ),
                     "Travel Request",
                     ClearCollect(
-                        TR,{
+                        TR,
+                        {
                             ID: 1,
                             'Itinerary - Date': "",
                             Departure: "",

@@ -71,7 +71,6 @@
                     ZIndex: =5
 
                 TextInput3_6 As text:
-                    Align: =Align.Center
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderThickness: =2
                     Color: =RGBA(51, 51, 51, 1)
@@ -81,8 +80,8 @@
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
-                    Format: =TextFormat.Number
                     Height: =35
+                    HintText: ="Intinerate"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
@@ -113,6 +112,7 @@
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     Height: =35
+                    HintText: ="Departure"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
@@ -144,6 +144,7 @@
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     Height: =35
+                    HintText: ="Arrival"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
@@ -169,6 +170,8 @@
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
+                    DisplayMode: |-
+                        =If(ThisItem.ID <> Last(TR).ID || ThisItem.'# Days' < 0 || ThisItem.Arrival = "" || ThisItem.Departure = "" || ThisItem.'Itinerary - Date' = "" || ThisItem.'Per Diem' = "",DisplayMode.Disabled,DisplayMode.Edit)
                     FocusedBorderThickness: =4
                     Height: =25
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -176,7 +179,7 @@
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Add
                     OnSelect: |-
-                        =Select(Parent);Collect(TR,{ID:Last(TR).ID+1})
+                        =Select( Parent );Collect(TR,{ID:Last(TR).ID+1,'Itinerary - Date':"",Departure:"",Arrival:"",'# Days':0,'Per Diem':""})
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -218,6 +221,7 @@
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     Height: =35
+                    HintText: ="Per Diem"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
@@ -248,7 +252,9 @@
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
+                    Format: =TextFormat.Number
                     Height: =35
+                    HintText: ="Days in number"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
@@ -338,6 +344,7 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 120, 212, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
@@ -369,6 +376,7 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 120, 212, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
@@ -401,6 +409,7 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 120, 212, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
@@ -432,6 +441,7 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 120, 212, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
