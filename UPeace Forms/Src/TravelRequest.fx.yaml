@@ -183,6 +183,7 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Add new travel info"
                     Width: =25
                     X: =1314
                     Y: =11
@@ -204,6 +205,7 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Delete travel info"
                     Visible: =CountRows(TR) > 1
                     Width: =25
                     X: =1314
