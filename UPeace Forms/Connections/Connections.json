@@ -29,6 +29,12 @@
           "PSR": {
             "tableName": "03c5968d-a004-4658-aa03-37b1c091ec81"
           },
+          "Travel Information": {
+            "tableName": "e1574098-1694-4b94-843f-c8189e5d6d53"
+          },
+          "Travel Request": {
+            "tableName": "17e48b58-52f7-4b2e-810c-3b90e01d41ff"
+          },
           "Vehicle Request": {
             "tableName": "c8957d93-b09f-4c87-b265-c68998770ee2"
           }
@@ -41,7 +47,9 @@
       "Contract Request",
       "Payment Request",
       "Bus Service",
-      "Vehicle Request"
+      "Vehicle Request",
+      "Travel Request",
+      "Travel Information"
     ],
     "dependencies": {},
     "dependents": [],

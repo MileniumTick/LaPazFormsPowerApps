@@ -615,7 +615,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="DPS"
-            Default: =ThisItem.DPS
+            Default: =ThisItem.DireccionPuntoSalida
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Vehicle Request'],DataSourceInfo.DisplayName,"DPS")
             Fill: =RGBA(0, 0, 0, 0)
@@ -730,7 +730,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="DPD"
-            Default: =ThisItem.DPD
+            Default: =ThisItem.DireccionPuntoDestino
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Vehicle Request'],DataSourceInfo.DisplayName,"DPD")
             Fill: =RGBA(0, 0, 0, 0)
@@ -845,7 +845,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="NP"
-            Default: =ThisItem.NP
+            Default: =ThisItem.NumeroPersonas
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Vehicle Request'],DataSourceInfo.DisplayName,"NP")
             Fill: =RGBA(0, 0, 0, 0)
@@ -959,7 +959,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="MSS"
-            Default: =ThisItem.MSS
+            Default: =ThisItem.MaestriaSolicitaServicio
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Vehicle Request'],DataSourceInfo.DisplayName,"MSS")
             Fill: =RGBA(0, 0, 0, 0)
@@ -1011,13 +1011,13 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Choices([@'Vehicle Request'].MSS)
+                Items: =Choices([@'Vehicle Request'].MaestriaSolicitaServicio)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Vehicle Request'.MSS,DataCardValue95.SearchText)
+                SearchItems: =Choices('Vehicle Request'.MaestriaSolicitaServicio,DataCardValue95.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -1307,7 +1307,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
+            Default: =ThisItem.'Datos adjuntos'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Vehicle Request'],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
