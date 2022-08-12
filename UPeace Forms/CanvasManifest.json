@@ -114,6 +114,7 @@
     "Institucional Vehicle Request",
     "ExtensionAddendumContract",
     "PaymentRequest",
+    "SolicitudMandados",
     "TravelRequest"
   ]
 }

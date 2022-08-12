@@ -34,7 +34,7 @@ Menu As screen:
                 },
                 {
                     Title: "Mandados",
-                    Screen: PurchaseRequest,
+                    Screen: SolicitudMandados,
                     IMG: "https://www.sensors.nl/wp-content/uploads/2020/04/services-icon-png-black-3.png"
                 },
                 {
