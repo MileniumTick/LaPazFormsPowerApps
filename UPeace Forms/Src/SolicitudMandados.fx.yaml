@@ -113,12 +113,12 @@ SolicitudMandados As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Solicitud de mandados'
         DefaultMode: =FormMode.New
-        Height: =664
+        Height: =564
         NumberOfColumns: =1
         OnSuccess: =Notify("Solicitud enviada con exito",NotificationType.Success);ResetForm(Form2_1)
         Width: =1102
         X: =133
-        Y: =74
+        Y: =174
         ZIndex: =7
 
         Title_DataCard3 As typedDataCard.textualEditCard:
@@ -1013,4 +1013,24 @@ SolicitudMandados As screen:
                 Wrap: =false
                 Y: =DataCardKey59.Y
                 ZIndex: =4
+
+    Label15 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 60, 106, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(153, 153, 191, 0.17)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        PaddingLeft: =25
+        Size: =20
+        Text: ="Formulario para tus pedidos"
+        Width: =1102
+        X: =133
+        Y: =89
+        ZIndex: =8
 
