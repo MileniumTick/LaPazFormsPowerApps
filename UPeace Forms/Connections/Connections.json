@@ -58,5 +58,22 @@
     "dependencies": {},
     "dependents": [],
     "id": "18b02a7e-3e00-47af-8d7f-a6f3704e5983"
+  },
+  "8f830dd5-144b-4629-89d4-2cd185de289f": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1587/1.0.1587.2924/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8f830dd5-144b-4629-89d4-2cd185de289f"
   }
 }
