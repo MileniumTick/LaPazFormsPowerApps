@@ -380,7 +380,7 @@
                 Y: =213
                 ZIndex: =20
 
-            Label17 As label:
+            Espaciado As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -392,6 +392,7 @@
                 Height: =30
                 Size: =13
                 Text: ="Texto"
+                Visible: =false
                 Width: =57
                 X: =866
                 Y: =393
