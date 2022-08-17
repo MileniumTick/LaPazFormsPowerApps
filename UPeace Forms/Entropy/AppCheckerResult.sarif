@@ -5924,6 +5924,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.TextInput7_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.TextInput7_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PurchaseRequest",
+                "type": "PurchaseRequest.Canvas1.DataCard1.TextInput7_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.TextInput7_3.AccessibleLabel"
                 }
               ],
@@ -6044,19 +6074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.ComboBox1_3.AccessibleLabel"
+                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.TextInput7_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.ComboBox1_3.AccessibleLabel",
+                  "fullyQualifiedName": "PurchaseRequest.Canvas1.DataCard1.TextInput7_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PurchaseRequest",
-                "type": "PurchaseRequest.Canvas1.DataCard1.ComboBox1_3"
+                "type": "PurchaseRequest.Canvas1.DataCard1.TextInput7_4"
               }
             }
           ],
