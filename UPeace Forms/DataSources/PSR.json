@@ -45,6 +45,8 @@
       "Created": "Created",
       "CuentaProyectos": "CuentaProyectos",
       "DC": "CoordinadorDepartamento",
+      "Departments": "Departments",
+      "Departments#Id": "Departments Id",
       "Descripcion": "Descripcion",
       "EAF": "EstadoAprobacionFinanciera",
       "EAF#Id": "EstadoAprobacionFinanciera Id",

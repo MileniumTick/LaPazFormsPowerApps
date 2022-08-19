@@ -86,7 +86,7 @@
                 Height: =30
                 Size: =12
                 Text: |-
-                    ="CHARGE TO DEPARTMENT:"
+                    ="THIS PURCHASE WILL CHARGED TO:"
                 Width: =365
                 X: =78
                 Y: =273
@@ -136,7 +136,7 @@
                 Height: =30
                 Size: =12
                 Text: |-
-                    ="BUDGET LINE:"
+                    ="BUDGET:"
                 Width: =365
                 X: =78
                 Y: =363
@@ -154,18 +154,18 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Result"]
+                DisplayFields: =["Value"]
                 Font: =Font.'Segoe UI'
                 Height: =30
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Distinct(Choices(PSR.CC),Value)
+                Items: =Choices(PSR.TipoPurchase)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
-                SearchFields: =["Result"]
-                SearchItems: =Search(Distinct(Choices(PSR.CC),Value),ComboBox1_1.SearchText,"Result")
+                SearchFields: =["Value"]
+                SearchItems: =Choices(PSR.TipoPurchase,ComboBox1_1.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 Size: =12
                 Width: =365
@@ -473,6 +473,55 @@
                 X: =500
                 Y: =393
                 ZIndex: =24
+
+            Label2_7 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =12
+                Text: ="DEPARTMENT / PROGRAMME"
+                Width: =365
+                X: =500
+                Y: =273
+                ZIndex: =25
+
+            ComboBox1_2 As combobox:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Font: =Font.'Segoe UI'
+                Height: =30
+                HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
+                Items: =Choices(PSR.Departments)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(PSR.Departments,ComboBox1_2.SearchText)
+                SelectionFill: =RGBA(0, 120, 212, 1)
+                Size: =12
+                Width: =365
+                X: =500
+                Y: =303
+                ZIndex: =26
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
