@@ -15,7 +15,8 @@ Menu As screen:
                 {
                     Title: "Certification Request for Human Resources (Certificaciones de Recursos Humanos)",
                     Screen: PurchaseRequest,
-                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png"
+                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png",
+                    btnDiss: true
                 },
                 {
                     Title: "Request for Bus Service (Carbus)",
@@ -25,7 +26,8 @@ Menu As screen:
                 {
                     Title: "Reclamación de Gastos Médicos (Reembolsos)",
                     Screen: PurchaseRequest,
-                    IMG:"https://www.teaseguro.net/gastos_medicos_GNP/images/ambulancia-.png"
+                    IMG:"https://www.teaseguro.net/gastos_medicos_GNP/images/ambulancia-.png",
+                    link: "https://staff.upeace.org/forms/Formulario_de_Reclamacion_Colectivo_de_Salud.pdf"
                 },
                 {
                     Title: "Payment Request",
@@ -40,7 +42,8 @@ Menu As screen:
                 {
                     Title: "Library Acquisition Request",
                     Screen: PurchaseRequest,
-                    IMG: "https://ncwc.edu/wp-content/uploads/2016/06/library-icon.png"
+                    IMG: "https://ncwc.edu/wp-content/uploads/2016/06/library-icon.png",
+                    link: "https://staff.upeace.org/forms/library"
                 },
                 {
                     Title: "Institutional Vehicle Request",
@@ -70,7 +73,8 @@ Menu As screen:
                 {
                     Title: "Abscence Request",
                     Screen: PurchaseRequest,
-                    IMG: "https://cdn-icons-png.flaticon.com/512/4908/4908893.png"
+                    IMG: "https://cdn-icons-png.flaticon.com/512/4908/4908893.png",
+                    link: "https://staff.upeace.org/forms/Vacations/index.cfm"
                 },
                 {
                     Title: "Purchase & Service Request",
@@ -81,7 +85,8 @@ Menu As screen:
                 {
                     Title: "Service Authorization",
                     Screen: PurchaseRequest,
-                    IMG:"https://cdn-icons-png.flaticon.com/512/950/950237.png"
+                    IMG:"https://cdn-icons-png.flaticon.com/512/950/950237.png",
+                    link:"https://staff.upeace.org/forms/Solicitud_de_Autorizacion_de_Servicio.pdf"
                 }
             ),Title,Ascending)
         Layout: =Layout.Vertical
@@ -140,7 +145,8 @@ Menu As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisabledFill: =RGBA(244, 244, 244, 0.37)
+            DisplayMode: =If(ThisItem.btnDiss = true,DisplayMode.View,DisplayMode.Edit)
             Fill: =RGBA(0, 0, 0, 0)
             FocusedBorderColor: =ColorFade(Self.BorderColor, -75%)
             FocusedBorderThickness: =2
@@ -152,6 +158,7 @@ Menu As screen:
             HoverFill: =ColorFade(RGBA(0, 0, 0, 0.05), -10%)
             OnSelect: |-
                 =Select(Parent);
+                If(IsBlank(ThisItem.link),
                 Navigate(
                     ThisItem.Screen,
                     ScreenTransition.None
@@ -197,7 +204,7 @@ Menu As screen:
                 Set(
                     isJuridical,
                     true
-                )
+                ),Launch(ThisItem.link))
             PressedBorderColor: =ColorFade(RGBA(0, 0, 0, 0), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 0, 0, 0), -30%)

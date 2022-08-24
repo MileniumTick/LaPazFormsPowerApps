@@ -32,7 +32,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =247
+            Height: =359
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -76,6 +76,39 @@
                 Width: =1366
                 Y: =87
                 ZIndex: =3
+
+            Label16 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 84, 148, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =13
+                Text: ="Name of solicitor"
+                X: =12
+                Y: =248
+                ZIndex: =4
+
+            Label16_1 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 84, 148, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =32
+                Size: =13
+                Text: =User().FullName
+                Width: =290
+                X: =12
+                Y: =288
+                ZIndex: =5
 
         DataCard2_1 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
