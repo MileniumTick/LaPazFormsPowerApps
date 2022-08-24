@@ -215,12 +215,13 @@
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Departments
+                IsSearchable: =false
+                Items: =ShowColumns(Departments,"Title")
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 SearchFields: =["Title"]
-                SearchItems: =Search(Departments,ComboBox3.SearchText,"Title")
+                SearchItems: =[]
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -826,6 +827,43 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |-
+                    =Set(
+                        eqHash,
+                        Text(GUID()&User().Email)
+                    );
+                    Patch(
+                        'Equipment Request',
+                        Defaults('Equipment Request'),
+                        {
+                            NameSolicitor: User().FullName,
+                            DateRequest: Today(),
+                            'Deparment/Unit': UsuariosdeOffice365.MyProfileV2().department,
+                            Department_Head: ComboBox3.Selected.Title,
+                            External_Location: TextInput5.Text,
+                            Purpose: TextInput5_1.Text,
+                            GUID_Equipment: eqHash
+                        }
+                    );
+                    ForAll(
+                        EFEU,
+                        Patch(
+                            'Equipment Assigment',
+                            Defaults('Equipment Assigment'),
+                            {
+                                Asset_Tag: ThisRecord.AssetTag,
+                                Description: ThisRecord.Description,
+                                Quantity: Value(ThisRecord.Quantity),
+                                Comments: ThisRecord.Justification,
+                                Exit_Date: ThisRecord.ExitDate,
+                                Entrance_Date: ThisRecord.EntranceDate,
+                                GUID_Equipment: eqHash
+                            }
+                        )
+                    );
+                    Clear(EFEU);
+                    Notify("Request send succesfuly",NotificationType.Success);
+                    Back()
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)

@@ -48,23 +48,19 @@ List As screen:
             =Sort(Table(
                 {
                     Title: "Travel Request",
-                    Screen: PurchaseRequest,
+                    Screen: TravelRequest,
                     IMG: "https://cdn0.iconfinder.com/data/icons/insurance-19/512/travel-1024.png"
                 },
                 {
                     Title: "Certification Request for Human Resources (Certificaciones de Recursos Humanos)",
                     Screen: PurchaseRequest,
-                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png"
+                    IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png",
+                    btnDiss: true
                 },
                 {
                     Title: "Request for Bus Service (Carbus)",
-                    Screen: PurchaseRequest,
+                    Screen: 'Bus Services Request',
                     IMG: "https://cdn4.iconfinder.com/data/icons/england-isometric/512/g22686-1024.png"
-                },
-                {
-                    Title: "Reclamación de Gastos Médicos (Reembolsos)",
-                    Screen: PurchaseRequest,
-                    IMG:"https://www.teaseguro.net/gastos_medicos_GNP/images/ambulancia-.png"
                 },
                 {
                     Title: "Payment Request",
@@ -73,22 +69,12 @@ List As screen:
                 },
                 {
                     Title: "Mandados",
-                    Screen: PurchaseRequest,
+                    Screen: SolicitudMandados,
                     IMG: "https://www.sensors.nl/wp-content/uploads/2020/04/services-icon-png-black-3.png"
                 },
                 {
-                    Title: "Library Acquisition Request",
-                    Screen: PurchaseRequest,
-                    IMG: "https://ncwc.edu/wp-content/uploads/2016/06/library-icon.png"
-                },
-                {
-                    Title: "Job Description",
-                    Screen: PurchaseRequest,
-                    IMG:"https://randschools.com/international-section/images/2020/Gallery/2018-18-job-icon.png"
-                },
-                {
                     Title: "Institutional Vehicle Request",
-                    Screen: PurchaseRequest,
+                    Screen: 'Institucional Vehicle Request',
                     IMG:"https://cdn2.iconfinder.com/data/icons/auto-services/33/auto_contract-512.png"
                 },
                 {
@@ -110,21 +96,6 @@ List As screen:
                     Title: "Contract Request",
                     Screen: ContractRequest,
                     IMG:"https://cdn-icons-png.flaticon.com/512/427/427703.png"
-                },
-                {
-                    Title: "Request for Email Accounts",
-                    Screen: PurchaseRequest,
-                    IMG:"https://cdn-icons-png.flaticon.com/512/552/552486.png"
-                },
-                {
-                    Title: "Abscence Request Form",
-                    Screen: PurchaseRequest,
-                    IMG:"https://cdn-icons-png.flaticon.com/512/4306/4306892.png"
-                },
-                {
-                    Title: "Abscence Request",
-                    Screen: PurchaseRequest,
-                    IMG: "https://cdn-icons-png.flaticon.com/512/4908/4908893.png"
                 },
                 {
                     Title: "Purchase & Service Request",
@@ -211,6 +182,29 @@ List As screen:
             Y: =7
             ZIndex: =6
 
+        Label17 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(230, 230, 230, 0.59)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =122
+            OnSelect: =
+            Size: =20
+            Text: ="No disponible"
+            Visible: =ThisItem.btnDiss
+            Width: =216
+            X: =6
+            Y: =7
+            ZIndex: =7
+
     ContractList As dataTable.datatable:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.Solid
@@ -225,12 +219,12 @@ List As screen:
         HeadingFont: =Font.'Segoe UI'
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
-        Height: =581
+        Height: =538
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(0, 120, 212, 1)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: ='Contract Request'
+        Items: =Filter('Contract Request',TextInput8.Text in Consecutivo)
         LinkColor: =RGBA(0, 134, 208, 1)
         PrimaryColor1: =RGBA(0, 120, 212, 1)
         PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -238,9 +232,10 @@ List As screen:
         SelectedColor: =RGBA(51, 51, 51, 1)
         SelectedFill: =RGBA(0, 120, 212, .2)
         Size: =13
+        Visible: =ListValue = "Contract Request"
         Width: =1366
         X: =0
-        Y: =187
+        Y: =229
         ZIndex: =6
 
         "'First Name_Column1' As dataTableColumn.textualColumn":
@@ -739,4 +734,194 @@ List As screen:
         X: =1319
         Y: =7
         ZIndex: =7
+
+    EquipmentList As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(0, 120, 212, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =537
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 120, 212, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =Filter('Equipment Request',TextInput8.Text in Consecutivo)
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(0, 120, 212, 1)
+        PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(0, 120, 212, .2)
+        Size: =13
+        Visible: =ListValue = "Equipment for External Use"
+        Width: =1366
+        X: =0
+        Y: =230
+        ZIndex: =8
+
+        NameSolicitor_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name of solicitor"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.NameSolicitor
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =41
+
+        DateRequest_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date request"
+            FieldName: ="DateRequest"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.DateRequest
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =42
+
+        "'Deparment/Unit_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Deparment unit"
+            FieldName: ="Deparment_x002f_Unit"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Deparment/Unit'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =43
+
+        Department_Head_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Department head"
+            FieldName: ="Department_Head"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Department_Head
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =44
+
+        External_Location_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="External location"
+            FieldName: ="External_Location"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.External_Location
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =45
+
+        Purpose_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Purpose"
+            FieldName: ="Purpose"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Purpose
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =46
+
+        Consecutivo_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Consecutivo"
+            FieldName: ="Consecutivo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Consecutivo
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =47
+
+    TextInput8 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =30
+        HintText: ="Consecutivo o Nombre"
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        X: =13
+        Y: =187
+        ZIndex: =9
+
+    ComboBox4 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Title"]
+        Font: =Font.'Segoe UI'
+        Height: =30
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        InputTextPlaceholder: ="Buscar por dep"
+        Items: =ShowColumns(Departments,"Title","ID")
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        SearchFields: =["Title"]
+        SearchItems: =Search(ShowColumns(Departments,"Title","ID"),ComboBox4.SearchText,"Title")
+        SelectionFill: =RGBA(0, 120, 212, 1)
+        SelectMultiple: =false
+        Size: =13
+        X: =352
+        Y: =187
+        ZIndex: =10
 

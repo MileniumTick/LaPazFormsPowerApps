@@ -32,7 +32,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =727
+            Height: =507
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -117,6 +117,7 @@
                 SearchFields: =["Result"]
                 SearchItems: =Search(Distinct(Choices(PSR.CC),Value),ComboBox1.SearchText,"Result")
                 SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
                 Size: =12
                 Width: =365
                 X: =78
@@ -167,6 +168,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =Choices(PSR.TipoPurchase,ComboBox1_1.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
                 Size: =12
                 Width: =365
                 X: =78
@@ -206,6 +208,7 @@
                 Size: =12
                 Text: |-
                     =Upper("Recommended Provider:")
+                Visible: =false
                 Width: =365
                 X: =923
                 Y: =363
@@ -316,7 +319,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =30
-                HintText: ="Name of Solicitor"
+                HintText: ="Department"
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
@@ -421,6 +424,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
+                Visible: =false
                 Width: =365
                 X: =923
                 Y: =393
@@ -440,6 +444,7 @@
                 Size: =12
                 Text: |-
                     =Upper("Cost of the purchase/service:")
+                Visible: =false
                 Width: =365
                 X: =500
                 Y: =363
@@ -469,6 +474,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
+                Visible: =false
                 Width: =365
                 X: =500
                 Y: =393
@@ -517,6 +523,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =Choices(PSR.Departments,ComboBox1_2.SearchText)
                 SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
                 Size: =12
                 Width: =365
                 X: =500

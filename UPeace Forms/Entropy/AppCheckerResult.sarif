@@ -14,39 +14,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "RequestEquimentExternal.Canvas1_1.DataCard1_1.ComboBox3.SearchItems"
+                  "fullyQualifiedName": "List.ContractList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "RequestEquimentExternal.Canvas1_1.DataCard1_1.ComboBox3.SearchItems",
+                  "fullyQualifiedName": "List.ContractList.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 7,
-                  "charOffset": 40,
+                  "charLength": 2,
+                  "charOffset": 42,
                   "snippet": {
-                    "text": "\"Title\""
+                    "text": "in"
                   }
                 }
               },
               "properties": {
-                "member": "SearchItems",
-                "module": "RequestEquimentExternal",
-                "type": "RequestEquimentExternal.Canvas1_1.DataCard1_1.ComboBox3"
+                "member": "Items",
+                "module": "List",
+                "type": "List.ContractList"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Search"
+              "Consecutivo"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List.EquipmentList.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "List.EquipmentList.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "in"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "List",
+                "type": "List.EquipmentList"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Consecutivo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
           "ruleIndex": 0
         },
         {
@@ -6204,17 +6244,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ListValue"
+                  "fullyQualifiedName": "List.TextInput8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ListValue",
+                  "fullyQualifiedName": "List.TextInput8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ListValue",
+                "member": "AccessibleLabel",
+                "module": "List",
+                "type": "List.TextInput8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List.ComboBox4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "List.ComboBox4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "List",
+                "type": "List.ComboBox4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.setID"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.setID",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "setID",
                 "module": "App",
                 "type": "App"
               }
@@ -6296,10 +6396,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-SuggestRemoteExecutionHint",
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
                 }
               },
               "properties": {

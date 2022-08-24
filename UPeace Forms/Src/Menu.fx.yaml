@@ -183,8 +183,8 @@ Menu As screen:
                             Quantity: 0,
                             Description: "",
                             AssetTag: "",
-                            ExitDate: "",
-                            EntranceDate: "",
+                            ExitDate: Today(),
+                            EntranceDate: Today(),
                             Comments: ""
                         }
                     ),
@@ -204,7 +204,8 @@ Menu As screen:
                 Set(
                     isJuridical,
                     true
-                ),Launch(ThisItem.link))
+                ),Launch(ThisItem.link));
+                Set(setID,Blank())
             PressedBorderColor: =ColorFade(RGBA(0, 0, 0, 0), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 0, 0, 0), -30%)
@@ -215,6 +216,29 @@ Menu As screen:
             X: =11
             Y: =13
             ZIndex: =3
+
+        Label17_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(230, 230, 230, 0.59)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =61
+            OnSelect: =
+            Size: =20
+            Text: ="No disponible"
+            Visible: =ThisItem.btnDiss
+            Width: =641
+            X: =19
+            Y: =18
+            ZIndex: =4
 
     RectQuickActionBar1_1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)

@@ -33,6 +33,7 @@
       "Editor#Claims": "Modified By Claims",
       "Entrance_Date": "Entrance_Date",
       "Exit_Date": "Exit_Date",
+      "GUID_Equipment": "GUID_Equipment",
       "ID": "ID",
       "Modified": "Modified",
       "Quantity": "Quantity",
