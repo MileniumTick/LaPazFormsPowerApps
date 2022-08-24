@@ -1,0 +1,48 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-08-09T16:45:14.0810000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Datos adjuntos",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nombre de archivo con extensión",
+      "{FullPath}": "Ruta de acceso completa",
+      "{HasAttachments}": "Tiene datos adjuntos",
+      "{Identifier}": "Identificador",
+      "{IsFolder}": "EsCarpeta",
+      "{Link}": "Vinculo al elemento",
+      "{ModerationComment}": "Comentarios asociados con la aprobación de contenido de este elemento de lista",
+      "{ModerationStatus}": "Estado de aprobación de contenido",
+      "{Name}": "Nombre",
+      "{Path}": "Ruta de acceso a la carpeta",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Token de fin de ventana de desencadenador",
+      "{TriggerWindowStartToken}": "Token de inicio de ventana de desencadenador",
+      "{VersionNumber}": "Número de versión",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "Comments": "Comments",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Description": "Description",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "Entrance_Date": "Entrance_Date",
+      "Exit_Date": "Exit_Date",
+      "ID": "ID",
+      "Modified": "Modified",
+      "Quantity": "Quantity",
+      "Title": "Asset_Tag"
+    },
+    "DatasetName": "https://upeaceorg.sharepoint.com/sites/Departments",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Equipment Assigment",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

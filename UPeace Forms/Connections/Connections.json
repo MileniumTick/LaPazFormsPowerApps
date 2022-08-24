@@ -23,6 +23,15 @@
           "Contract Request": {
             "tableName": "c74b0614-5b9b-4315-9004-6e4e684b9fb5"
           },
+          "Departments": {
+            "tableName": "74a07ed1-ae6f-4dad-bf3a-f134a1553b1f"
+          },
+          "Equipment Assigment": {
+            "tableName": "93eb1c01-03c2-4bce-bf5d-16b82c5194c5"
+          },
+          "Equipment Request": {
+            "tableName": "1c49ea69-3b79-4e7c-b312-8c7ee7987236"
+          },
           "Payment Request": {
             "tableName": "29574552-ee90-4667-9025-27f2bebb03f6"
           },
@@ -53,7 +62,10 @@
       "Vehicle Request",
       "Travel Request",
       "Travel Information",
-      "Solicitud de mandados"
+      "Solicitud de mandados",
+      "Departments",
+      "Equipment Assigment",
+      "Equipment Request"
     ],
     "dependencies": {},
     "dependents": [],
