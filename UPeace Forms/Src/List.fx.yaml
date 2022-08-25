@@ -229,8 +229,8 @@ List As screen:
         PrimaryColor1: =RGBA(0, 120, 212, 1)
         PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PrimaryColor3: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        SelectedColor: =RGBA(51, 51, 51, 1)
-        SelectedFill: =RGBA(0, 120, 212, .2)
+        SelectedColor: =RGBA(77, 77, 77, 1)
+        SelectedFill: =RGBA(0, 120, 212, 0.28)
         Size: =13
         Visible: =ListValue = "Contract Request"
         Width: =1366
@@ -246,7 +246,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =2
+            Order: =3
             Text: =ThisItem.'First Name'
             Width: =100
             X: =0
@@ -261,7 +261,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =3
+            Order: =4
             Text: =ThisItem.'Last Name'
             Width: =100
             X: =0
@@ -276,7 +276,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =4
+            Order: =5
             Text: =ThisItem.'Company''s Name'
             Width: =100
             X: =0
@@ -291,7 +291,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =5
+            Order: =6
             Text: =ThisItem.'Representative´s Name'
             Width: =100
             X: =0
@@ -306,7 +306,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =6
+            Order: =7
             Text: =ThisItem.Gender.Value
             Width: =100
             X: =0
@@ -321,7 +321,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =7
+            Order: =8
             Text: =ThisItem.'Telephone Number'
             Width: =100
             X: =0
@@ -336,7 +336,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =8
+            Order: =9
             Text: =ThisItem.'Fax Number'
             Width: =100
             X: =0
@@ -351,7 +351,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =9
+            Order: =10
             Text: =ThisItem.'Email Address'
             Width: =100
             X: =0
@@ -366,7 +366,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =10
+            Order: =11
             Text: =ThisItem.'Permanent Residence Addresss'
             Width: =100
             X: =0
@@ -381,7 +381,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =11
+            Order: =12
             Text: =ThisItem.'Contractual Relation'.Value
             Width: =100
             X: =0
@@ -396,7 +396,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =12
+            Order: =13
             Text: =ThisItem.'Contractual Relation (Class Teaching)'.Value
             Width: =100
             X: =0
@@ -411,7 +411,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =13
+            Order: =14
             Text: =ThisItem.Description
             Width: =100
             X: =0
@@ -426,7 +426,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =14
+            Order: =15
             Text: =ThisItem.'Identification Number'
             Width: =100
             X: =0
@@ -441,7 +441,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =15
+            Order: =16
             Text: =ThisItem.'Juridical Number'
             Width: =100
             X: =0
@@ -456,7 +456,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =16
+            Order: =17
             Text: =ThisItem.Citizenship.Value
             Width: =100
             X: =0
@@ -471,7 +471,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =17
+            Order: =18
             Text: =ThisItem.'Teaching Days'
             Width: =100
             X: =0
@@ -486,7 +486,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =18
+            Order: =19
             Text: =ThisItem.'Date of Birth'
             Width: =100
             X: =0
@@ -501,7 +501,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =19
+            Order: =20
             Text: =ThisItem.'Preferred Payment Method'.Value
             Width: =100
             X: =0
@@ -516,7 +516,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =20
+            Order: =21
             Text: =ThisItem.'Start date of services'
             Width: =100
             X: =0
@@ -531,7 +531,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =21
+            Order: =22
             Text: =ThisItem.'End Date of Services'
             Width: =100
             X: =0
@@ -546,7 +546,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =22
+            Order: =23
             Text: =ThisItem.'Comments on Timing'
             Width: =100
             X: =0
@@ -561,7 +561,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =23
+            Order: =24
             Text: =ThisItem.'Payment Rate'
             Width: =100
             X: =0
@@ -576,7 +576,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =24
+            Order: =25
             Text: =ThisItem.'Payment Plan'.Value
             Width: =100
             X: =0
@@ -591,7 +591,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =25
+            Order: =26
             Text: =ThisItem.'Other Payment Plan'
             Width: =100
             X: =0
@@ -606,7 +606,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =26
+            Order: =27
             Text: =ThisItem.Currency.Value
             Width: =100
             X: =0
@@ -621,7 +621,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =27
+            Order: =28
             Text: =ThisItem.Traveling.Value
             Width: =100
             X: =0
@@ -636,7 +636,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =28
+            Order: =29
             Text: =ThisItem.'Daily Rate'
             Width: =100
             X: =0
@@ -651,7 +651,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =29
+            Order: =30
             Text: =ThisItem.'Place will stay'
             Width: =100
             X: =0
@@ -666,7 +666,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =30
+            Order: =31
             Text: =ThisItem.Total
             Width: =100
             X: =0
@@ -696,7 +696,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =31
+            Order: =32
             Text: =ThisItem.'Payment schedule proposed'
             Width: =100
             X: =0
@@ -711,7 +711,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =32
+            Order: =33
             Text: =ThisItem.'Funded by'
             Width: =100
             X: =0
@@ -726,7 +726,7 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =33
+            Order: =34
             Text: =ThisItem.'Master Degree'.Value
             Width: =100
             X: =0
@@ -741,12 +741,26 @@ List As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
-            Order: =34
+            Order: =35
             Text: =ThisItem.Department.Value
             Width: =100
             X: =0
             Y: =0
             ZIndex: =40
+
+        State_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="State"
+            FieldName: ="State"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.State
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =48
 
     MenuIcon As icon.FilterFlatFilled:
         BorderColor: =RGBA(166, 166, 166, 1)
