@@ -4101,7 +4101,7 @@
             Height: =245
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Place_x0020_will_x0020_stay")
             Required: =false
-            Update: =DataCardValue28.Text
+            Update: =DataCardValue28.HtmlText
             Width: =682
             X: =0
             Y: =8
