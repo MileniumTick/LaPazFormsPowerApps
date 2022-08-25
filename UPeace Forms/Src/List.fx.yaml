@@ -809,6 +809,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =2
             Text: =ThisItem.NameSolicitor
             Width: =100
@@ -823,6 +824,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =3
             Text: =ThisItem.DateRequest
             Width: =100
@@ -837,6 +839,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =4
             Text: =ThisItem.'Deparment/Unit'
             Width: =100
@@ -851,6 +854,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =5
             Text: =ThisItem.Department_Head
             Width: =100
@@ -865,6 +869,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =6
             Text: =ThisItem.External_Location
             Width: =100
@@ -879,6 +884,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =7
             Text: =ThisItem.Purpose
             Width: =100
@@ -893,6 +899,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(DetailEquimentExternal,ScreenTransition.None)
             Order: =1
             Text: =ThisItem.Consecutivo
             Width: =100

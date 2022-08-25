@@ -108,6 +108,7 @@
     "List",
     "PurchaseRequest",
     "RequestEquimentExternal",
+    "DetailEquimentExternal",
     "ContractRequest",
     "Bus Services Request",
     "Institucional Vehicle Request",

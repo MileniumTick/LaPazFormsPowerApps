@@ -4236,6 +4236,7 @@
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Save Form"
         Width: =35
         X: =1322
         Y: =4
