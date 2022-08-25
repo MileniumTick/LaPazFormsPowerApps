@@ -217,28 +217,38 @@ Menu As screen:
             Y: =13
             ZIndex: =3
 
-        Label17_1 As label:
+        TextInput9 As text:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
+            Default: ="No disponible"
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(230, 230, 230, 0.59)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =61
-            OnSelect: =
+            FontWeight: =FontWeight.Semibold
+            Height: =66
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
             Size: =20
-            Text: ="No disponible"
             Visible: =ThisItem.btnDiss
-            Width: =641
-            X: =19
-            Y: =18
-            ZIndex: =4
+            Width: =649
+            X: =11
+            Y: =13
+            ZIndex: =5
 
     RectQuickActionBar1_1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
