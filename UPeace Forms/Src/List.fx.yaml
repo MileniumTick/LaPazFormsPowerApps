@@ -224,7 +224,7 @@ List As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =Filter('Contract Request',TextInput8.Text in Consecutivo)
+        Items: =Filter('Contract Request',ComboBox4.Selected.Title = Department.Value || IsBlank(ComboBox4.Selected.Title),TextInput8.Text in Consecutivo || IsBlank(TextInput8.Text))
         LinkColor: =RGBA(0, 134, 208, 1)
         PrimaryColor1: =RGBA(0, 120, 212, 1)
         PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -245,6 +245,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =2
             Text: =ThisItem.'First Name'
             Width: =100
@@ -259,6 +260,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =3
             Text: =ThisItem.'Last Name'
             Width: =100
@@ -273,6 +275,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =4
             Text: =ThisItem.'Company''s Name'
             Width: =100
@@ -287,6 +290,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =5
             Text: =ThisItem.'Representative´s Name'
             Width: =100
@@ -301,6 +305,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =6
             Text: =ThisItem.Gender.Value
             Width: =100
@@ -315,6 +320,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =7
             Text: =ThisItem.'Telephone Number'
             Width: =100
@@ -329,6 +335,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =8
             Text: =ThisItem.'Fax Number'
             Width: =100
@@ -343,6 +350,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =9
             Text: =ThisItem.'Email Address'
             Width: =100
@@ -357,6 +365,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =10
             Text: =ThisItem.'Permanent Residence Addresss'
             Width: =100
@@ -371,6 +380,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =11
             Text: =ThisItem.'Contractual Relation'.Value
             Width: =100
@@ -385,6 +395,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =12
             Text: =ThisItem.'Contractual Relation (Class Teaching)'.Value
             Width: =100
@@ -399,6 +410,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =13
             Text: =ThisItem.Description
             Width: =100
@@ -413,6 +425,7 @@ List As screen:
             FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =14
             Text: =ThisItem.'Identification Number'
             Width: =100
@@ -427,6 +440,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =15
             Text: =ThisItem.'Juridical Number'
             Width: =100
@@ -441,6 +455,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =16
             Text: =ThisItem.Citizenship.Value
             Width: =100
@@ -455,6 +470,7 @@ List As screen:
             FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =17
             Text: =ThisItem.'Teaching Days'
             Width: =100
@@ -469,6 +485,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =18
             Text: =ThisItem.'Date of Birth'
             Width: =100
@@ -483,6 +500,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =19
             Text: =ThisItem.'Preferred Payment Method'.Value
             Width: =100
@@ -497,6 +515,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =20
             Text: =ThisItem.'Start date of services'
             Width: =100
@@ -511,6 +530,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =21
             Text: =ThisItem.'End Date of Services'
             Width: =100
@@ -525,6 +545,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =22
             Text: =ThisItem.'Comments on Timing'
             Width: =100
@@ -539,6 +560,7 @@ List As screen:
             FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =23
             Text: =ThisItem.'Payment Rate'
             Width: =100
@@ -553,6 +575,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =24
             Text: =ThisItem.'Payment Plan'.Value
             Width: =100
@@ -567,6 +590,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =25
             Text: =ThisItem.'Other Payment Plan'
             Width: =100
@@ -581,6 +605,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =26
             Text: =ThisItem.Currency.Value
             Width: =100
@@ -595,6 +620,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =27
             Text: =ThisItem.Traveling.Value
             Width: =100
@@ -609,6 +635,7 @@ List As screen:
             FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =28
             Text: =ThisItem.'Daily Rate'
             Width: =100
@@ -623,6 +650,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =29
             Text: =ThisItem.'Place will stay'
             Width: =100
@@ -637,6 +665,7 @@ List As screen:
             FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =30
             Text: =ThisItem.Total
             Width: =100
@@ -651,6 +680,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =1
             Text: =ThisItem.Consecutivo
             Width: =100
@@ -665,6 +695,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =31
             Text: =ThisItem.'Payment schedule proposed'
             Width: =100
@@ -679,6 +710,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =32
             Text: =ThisItem.'Funded by'
             Width: =100
@@ -693,6 +725,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =33
             Text: =ThisItem.'Master Degree'.Value
             Width: =100
@@ -707,6 +740,7 @@ List As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
+            OnSelect: =Navigate(ContractRequest,ScreenTransition.None);EditForm(Form1);Set(isJuridical,ContractList.Selected.Is_Juridical)
             Order: =34
             Text: =ThisItem.Department.Value
             Width: =100

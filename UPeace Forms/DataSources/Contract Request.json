@@ -53,6 +53,7 @@
       "Gender#Id": "Gender Id",
       "ID": "ID",
       "Identification_x0020_Number": "Identification Number",
+      "Is_Juridical": "Is_Juridical",
       "Juridical_x0020_Number": "Juridical Number",
       "Last_x0020_Name": "Last Name",
       "Master_x0020_Degree": "Master Degree",
