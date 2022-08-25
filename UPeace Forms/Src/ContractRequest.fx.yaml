@@ -61,7 +61,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Department")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue32.Selected
             Width: =341
             X: =0
@@ -294,7 +294,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Master_x0020_Degree")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue35.Selected
             Visible: =isJuridical = false
             Width: =341
@@ -414,7 +414,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =279
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Funded_x0020_by")
-            Required: =false
+            Required: =true
             Update: =DataCardValue36.HtmlText
             Width: =682
             X: =2
@@ -510,8 +510,8 @@
             Update: =DataCardValue60.Value
             Visible: =false
             Width: =341
-            X: =1
-            Y: =9
+            X: =0
+            Y: =10
             ZIndex: =1
 
             DataCardKey60 As label:
@@ -613,7 +613,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Title")
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue1.Text
             Visible: =isJuridical = false
             Width: =341
@@ -729,7 +729,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Last_x0020_Name")
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue2.Text
             Visible: =isJuridical = false
             Width: =341
@@ -845,7 +845,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Company_x0027_s_x0020_Name")
-            Required: =false
+            Required: =isJuridical
             Update: =DataCardValue3.Text
             Visible: =isJuridical = true
             Width: =341
@@ -961,7 +961,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Representative_x00b4_s_x0020_Nam")
-            Required: =false
+            Required: =isJuridical
             Update: =DataCardValue4.Text
             Visible: =isJuridical = true
             Width: =341
@@ -1076,7 +1076,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Gender")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue5.Selected
             Visible: =isJuridical = false
             Width: =341
@@ -1196,7 +1196,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Telephone_x0020_Number")
-            Required: =false
+            Required: =true
             Update: =DataCardValue6.Text
             Width: =341
             X: =1
@@ -1311,7 +1311,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Permanent_x0020_Residence_x0020_")
-            Required: =false
+            Required: =true
             Update: =DataCardValue9.Text
             Width: =341
             X: =2
@@ -1426,7 +1426,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Fax_x0020_Number")
-            Required: =false
+            Required: =true
             Update: =DataCardValue7.Text
             Width: =341
             X: =3
@@ -1541,7 +1541,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Email_x0020_Address")
-            Required: =false
+            Required: =true
             Update: =DataCardValue8.Text
             Width: =341
             X: =0
@@ -1655,7 +1655,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Contractual_x0020_Relation")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue10.Selected
             Width: =341
             X: =1
@@ -1894,7 +1894,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Description")
-            Required: =false
+            Required: =isJuridical
             Update: =DataCardValue12.Text
             Visible: =isJuridical = true
             Width: =341
@@ -2009,7 +2009,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Identification_x0020_Number")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =Value(DataCardValue13.Text)
             Width: =341
             X: =0
@@ -2124,7 +2124,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Juridical_x0020_Number")
-            Required: =false
+            Required: =isJuridical
             Update: =DataCardValue14.Text
             Visible: =isJuridical = true
             Width: =341
@@ -2239,7 +2239,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Citizenship")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue15.Selected
             Width: =341
             X: =2
@@ -2472,7 +2472,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Date_x0020_of_x0020_Birth")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue17.SelectedDate
             Visible: =isJuridical = false
             Width: =341
@@ -2581,7 +2581,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Preferred_x0020_Payment_x0020_Me")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue18.Selected
             Width: =341
             X: =1
@@ -2699,7 +2699,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Start_x0020_date_x0020_of_x0020_")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue19.SelectedDate
             Width: =341
             X: =2
@@ -2807,7 +2807,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"End_x0020_Date_x0020_of_x0020_Se")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue20.SelectedDate
             Width: =341
             X: =3
@@ -2916,7 +2916,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Comments_x0020_on_x0020_Timing")
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue21.Text
             Visible: =isJuridical = false
             Width: =341
@@ -3031,7 +3031,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Payment_x0020_Rate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =Value(DataCardValue22.Text)
             Width: =341
             X: =1
@@ -3145,7 +3145,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Payment_x0020_Plan")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue23.Selected
             Width: =341
             X: =2
@@ -3379,7 +3379,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Currency")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue25.Selected
             Width: =341
             X: =0
@@ -3497,7 +3497,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Traveling")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =!isJuridical
             Update: =DataCardValue26.Selected
             Visible: =isJuridical = false
             Width: =341
@@ -3616,7 +3616,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Daily_x0020_Rate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =Value(DataCardValue27.Text)
             Width: =341
             X: =2
@@ -3730,7 +3730,7 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"Total")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =Value(DataCardValue29.Text)
             Width: =341
             X: =3
@@ -3845,7 +3845,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Consecutivo")
-            Required: =false
+            Required: =true
             Update: =DataCardValue30.Text
             Visible: =false
             Width: =341
@@ -3961,7 +3961,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =245
             MaxLength: =DataSourceInfo([@'Contract Request'], DataSourceInfo.MaxLength, "Place_x0020_will_x0020_stay")
-            Required: =false
+            Required: =true
             Update: =DataCardValue28.HtmlText
             Width: =682
             X: =0
@@ -4053,9 +4053,9 @@
             DisplayName: =DataSourceInfo([@'Contract Request'],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue31.Attachments
-            Width: =341
+            Width: =1364
             X: =0
             Y: =9
             ZIndex: =8
