@@ -1,10 +1,12 @@
 Menu As screen:
+    BackgroundImage: ='Contratos (26)'
     Fill: =RGBA(0, 0, 0, 0)
+    ImagePosition: =ImagePosition.Stretch
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =724
+        Height: =609
         Items: |-
             =Sort(Table(
                 {
@@ -93,9 +95,10 @@ Menu As screen:
         TemplatePadding: =0
         TemplateSize: =89
         Transition: =Transition.Pop
-        Width: =1366
+        Width: =1218
         WrapCount: =2
-        Y: =44
+        X: =85
+        Y: =112
         ZIndex: =1
 
         Image2 As image:
