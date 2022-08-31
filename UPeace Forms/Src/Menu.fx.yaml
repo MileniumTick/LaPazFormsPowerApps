@@ -15,8 +15,8 @@ Menu As screen:
                     IMG: "https://cdn0.iconfinder.com/data/icons/insurance-19/512/travel-1024.png"
                 },
                 {
-                    Title: "Certification Request for Human Resources (Certificaciones de Recursos Humanos)",
-                    Screen: PurchaseRequest,
+                    Title: "Certification Request for Human Resources",
+                    Screen: 'Certification Request for Human Resources',
                     IMG:"https://cdn-icons-png.flaticon.com/512/6703/6703900.png",
                     btnDiss: false
                 },
