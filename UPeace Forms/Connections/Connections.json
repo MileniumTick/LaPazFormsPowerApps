@@ -20,6 +20,9 @@
           "Centro de Costos": {
             "tableName": "bad5242f-2278-4af5-b8c0-7f0295affc56"
           },
+          "Certification Request for Human Resources_1": {
+            "tableName": "c852a68e-9e57-4179-81ef-1d84fe94053f"
+          },
           "Contract Request": {
             "tableName": "c74b0614-5b9b-4315-9004-6e4e684b9fb5"
           },
@@ -65,7 +68,8 @@
       "Solicitud de mandados",
       "Departments",
       "Equipment Assigment",
-      "Equipment Request"
+      "Equipment Request",
+      "Certification Request for Human Resources_1"
     ],
     "dependencies": {},
     "dependents": [],
