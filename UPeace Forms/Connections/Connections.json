@@ -14,6 +14,9 @@
     "datasets": {
       "https://upeaceorg.sharepoint.com/sites/Departments": {
         "dataSources": {
+          "Addendum of Contract": {
+            "tableName": "ee496290-c94a-4d3f-a841-486401f90396"
+          },
           "Bus Service": {
             "tableName": "599ad639-f018-4c08-9d65-17268d6d24d0"
           },
@@ -69,7 +72,8 @@
       "Departments",
       "Equipment Assigment",
       "Equipment Request",
-      "Certification Request for Human Resources_1"
+      "Certification Request for Human Resources_1",
+      "Addendum of Contract"
     ],
     "dependencies": {},
     "dependents": [],

@@ -149,7 +149,7 @@ Menu As screen:
             DisabledColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =RGBA(244, 244, 244, 0.37)
             DisplayMode: =If(ThisItem.btnDiss = true,DisplayMode.View,DisplayMode.Edit)
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0.07)
             FocusedBorderColor: =ColorFade(Self.BorderColor, -75%)
             FocusedBorderThickness: =2
             Font: =Font.'Segoe UI'
