@@ -1,6 +1,6 @@
 Home As screen:
-    BackgroundImage: ='Contratos (8)'
-    ImagePosition: =ImagePosition.Fill
+    BackgroundImage: ='Contratos (27)'
+    ImagePosition: =ImagePosition.Stretch
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     TextInput4 As text:

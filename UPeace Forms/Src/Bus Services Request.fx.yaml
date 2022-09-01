@@ -201,7 +201,6 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue79 As text:
@@ -232,7 +231,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =73
+                Y: =78
                 ZIndex: =2
 
             ErrorMessage79 As label:
@@ -593,7 +592,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) / 2
                 X: =30
-                Y: =76
+                Y: =78
                 ZIndex: =2
 
             HourValue2 As dropdown:
@@ -796,7 +795,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bus Service'],DataSourceInfo.DisplayName,"DPS")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =130
             MaxLength: =DataSourceInfo([@'Bus Service'], DataSourceInfo.MaxLength, "DPS")
             Required: =false
             Update: =DataCardValue80.Text
