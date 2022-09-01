@@ -101,6 +101,7 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                Height: =73
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
@@ -201,6 +202,7 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
+                Y: =8
                 ZIndex: =1
 
             DataCardValue79 As text:
@@ -314,6 +316,7 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
+                Y: =8
                 ZIndex: =1
 
             DateValue1 As datepicker:
@@ -838,6 +841,7 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                Height: =82
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
