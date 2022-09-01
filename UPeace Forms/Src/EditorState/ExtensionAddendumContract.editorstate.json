@@ -511,7 +511,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContractNumber_DataCard1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12829,7 +12829,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FirtName_DataCard1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
