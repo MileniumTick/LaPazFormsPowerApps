@@ -1284,7 +1284,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Consecutivo_DataCard1",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -36834,7 +36834,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Payment schedule proposed_DataCard1",
-      "ParentIndex": 30,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
